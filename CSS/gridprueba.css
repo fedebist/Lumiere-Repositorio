@@ -1,0 +1,78 @@
+.video{
+    background-image: url(../Multimedia/serum\ reparador.jpeg);
+    background-position: center;
+}
+
+ 
+.gridArea{   /* no necesariamente es el nombre de la etiqueta, tiene que ser el del area */
+    display: grid;
+    grid-template-areas: /* con un ''.'' defino espacio vacío */
+    'header header header' /* primera fila , 3 columnas */
+    'main main aside' /* main ocupa 2 columnas y aside la otra */
+    'footer footer footer'; /* footer ocupa las 3 columnas */ 
+    grid-template-rows: 100px 300px 100px;
+    gap: 10px; /* diferencia entre cada área */
+}
+
+header{
+    grid-area: header;
+    background-color: deeppink;
+}
+
+main{
+    grid-area: main;
+    background-color: deepskyblue;
+}
+
+
+aside{
+    grid-area: aside;
+    background-color: burlywood;
+}
+
+footer{
+    grid-area: footer;
+    background-color: chartreuse;
+}
+
+header, main, aside, footer{
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+<style>
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+</style>
+
+
+
+.gridImg{
+    width: 600px;
+    margin: 0 auto; /* LAS PONE MAS AL MEDIO */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.gridImg img{
+    width: 100%;
+    height: auto;
+}

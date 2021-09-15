@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box; /* declarar siempre: respeta tamaño de la caja y si se le agrega padding se achique para adentro respetando ancho de la caja */
+     margin: 0;
+     padding: 0;
+     list-style: none; /* eliminar viñeta de lista */
+}
+
+
+#grilla{
+    display:grid; 
+    grid-template-areas: 
+    'nav header header'
+    'nav productos publicidad'
+    'nav footer footer footer';
+    grid-template-rows: 300 px 200px 500 px; 
+    grid-template-columns: 500 px 300px 20px;
+}
+
+.border {
+    border: 2px solid  red;
+
+}
+
+header{
+    grid-area: header;
+    background-color: royalblue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: blueviolet
+}
+
+section#productos{
+    grid-area productos;
+    background-color: coral;
+}
+
+section#servicios {
+    grid-area: servicios;
+    background-color: darkgreen;
+}
+
+nav{
+    grid-area: nav;
+    background-color: aqua;
+}
+
+aside{
+    grid-area: publicidad;
+    background-color: brown;
+}
+
+
+.boxModel{
+    width: 300px;
+    height: 500px;
+    background-color: khaki;
+   /* padding top, right, bottom y left quedan en 20 si asigno solo padding */
+    padding: 20px 40px 10px 5px; /* 20 40 10 5, primero arriba (top), segundo right, tercero bottom, cuarto left */
+    border: 5px dashed black; /* border top, right, bottom, left */
+   margin: 50px auto 0;  /* funciona igual que los anteriores, margin solo es para los 4 lados 50 px arriba abajo y centrado */
+/* para centrar imagen puedo usar estas propiedades, img debe estar dentro del contenedor */
+}
+
+.segundoContenedor{
+    width: 300px;
+    height: auto;
+    background-color: lawngreen;
+    padding: 20px 0;
+    margin-top: -50px; 
+    
+
+}
