@@ -1,9 +1,0 @@
-*{
-    background-color: black;
-}
-
-.list-span-overlay-wrapper .list-span-overlay.selected:not(.no-border).selected-done {
-    -webkit-transition: all 1s;
-    transition: all 1s;
-    border: 2px solid #459fed;
-}
