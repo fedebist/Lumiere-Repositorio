@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,30 +19,64 @@
     <link rel='stylesheet' href='../CSS/style.css'>
 </head>
 <body>
-    <header class='header'>
+    <nav class='navNavBar'>
 
-        <div class='headerLogo'>
-            <a href='../index.html'> <p class="logo">lumière</p></a>
-        </div>
-        
-             <nav class='headerMenu'>
-          <ul>
-           <li><a href='../index.html'>Home</a></li>
-          <li><a href='./catalogo2.html'>Catálogo</a></li>
-          <li><a href='formulario lumiere.html'>Contacto</a></li>
-          <li><a href='../paginas/mayorista lumiere.html'>Promociones</a></li>
-          <li><a href='./mision lumiere.html'>Nosotros</a></li>
-         
-         
-        </ul>
-         
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-miColor b-b-0">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Lumière</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./formulario lumiere.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Catálogo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a href="./catalogo2.html">Baños de crema</a></li>
+                    <li><a href="./catalogo2.html">Oro líquido</a></li>
+                    <li><a href="./catalogo2.html">Ampollitas multivitamínicas</a></li>
+                    <li><a href="./catalogo2.html">Shampoo y acondicionador</a></li>
+                    <li><a href="./catalogo2.html">Crema para peinar</a></li>
+                    <li><a href="./catalogo2.html">Rizos definidos</a></li>
+                    <li><a href="./catalogo2.html">Shock de queratina</a></li>
+                    <li><a href="./catalogo2.html">Botox Capilar</a></li>
+                    <li><a href="./catalogo2.html">Cauterizador</a></li>
+                    <li><a href="./catalogo2.html">Sérum Reparador de puntas</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Compra mayorista</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href='./mision lumiere.html'>Nosotros</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
         </nav>
-        
-        </div>
-        
-        
-        
-        </header>
+    
+    
+    
+    
+      </nav>
+      </header>
+    
 <main>
     <p>Soy una estudiante universitaria de Mar del Plata, que, en medio de la pandemia, comenzó con este emprendimiento a mediados de noviembre del 2020.</p>
 
@@ -54,16 +90,29 @@
 
 </main>
 
-<hr>
 
-<footer class='footerRedes'>
-    <a href= 'https://instagram.com/lumiere.capilares?utm_medium=copy_link' target='blank'>
-        <p class='logoIg'><img src='../Multimedia/instagram.png' width='40' height='45'></p>
-        <h4 class=footerIg>Instagram: lumiere.capilares</h4></a>
+    <footer class='bg-miColor'>
+        <div class="container">
+          <div class='row text-center'>
+            <div class='col-12 col-md-6 my-2'>
+              <p>contacto</p>
+              <a href= 'https://instagram.com/lumiere.capilares?utm_medium=copy_link' target='blank'><p class='logoIg'><img src='../Multimedia/instagram.png' width='40' height='45'></p>
+              <h4 class=footerIg>instagram lumiere.capilares</h4></a>
+            </div>
+            <div class='col-12 col-md-6 my-2'>
+              <p>Mar del Plata</p>
+              <p>todos los derechos reservados</p>
+              <p>&copy 2021</p>
+         </div>
+           </div>
+            </footer>
     
-       
-    </footer>
-    
-    
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      crossorigin="anonymous"></script>
 </body>
 </html>

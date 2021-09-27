@@ -1,6 +1,6 @@
 *{
     font-family: 'Barlow Condensed', sans-serif;
-    list-style: none;
+    /* list-style: none; */
     margin: 0;
     padding: 0;
     text-decoration: none; /* evitar hipervínculo */
@@ -159,9 +159,16 @@ h4{ /* títulos panel productos */
 }
 
 .descripcionProducto{
+    padding-top: 7px;
     text-align: center;
     color: darkmagenta;
+    font-size: 120%;
     
+}
+
+
+.tituloContenedor{ /* titulo contenedor catálogo */
+    text-align: center;
 }
 
 
@@ -285,9 +292,9 @@ section.sectionAmpollitas{
 
 .containerShampoo{
 justify-content: space-evenly;
-width: 100px;
+width: 200px;
 padding: 2px 15px;
-margin: auto; /* LAS PONE MAS AL MEDIO */
+margin: auto;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 5px;
@@ -317,12 +324,65 @@ gap: 5px;
     width: 200px;
     padding: 2px 15px;
     margin: auto; 
-    display: flex justify-content: center;
+    display: flex;
+}
+
+
+.sectionTratamientosCapilares{
+    background-color: #E6D3FD;
+    border-bottom: 6px solid #B475FF;
+}
+
+.sectionCauterizador{
+    background-color: #E6D3FD;
+    border-bottom: 6px solid #B475FF;
+}
+
+.containerCauterizador{
+    justify-content: center;
+    padding: 2px 15px;
+    display: flex;
+    width: 200px;
+    margin: auto; 
+}
+
+.containerTratamientos{
+    justify-content: space-evenly;
+    width: 100px;
+    padding: 2px 15px;
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+}
+
+
+.sectionAguaCoco{
+    background-color: #E6D3FD;
+    border-bottom: 6px solid #B475FF;
+}
+
+
+.sectionSerum{
+    background-color: #E6D3FD;
+}
+
+.containerAguaCoco{
+    justify-content: center;
     width: 200px;
     padding: 2px 15px;
     margin: auto; 
-    display: flex
+    display: flex;
 }
+
+.containerSerum{
+    justify-content: center;
+    width: 200px;
+    padding: 2px 15px;
+    margin: auto; 
+    display: flex;
+}
+
 
 .containerProducto{
      margin: 15px; 
@@ -338,7 +398,8 @@ gap: 5px;
 }
 
 .containerProducto img{
-    width: 200px;
+    width: 240px;
+    height: auto;
 }
 
 .contenidoPagina{ /* background color del container */
@@ -354,11 +415,6 @@ gap: 5px;
    /*  text-align: center;
     padding: 5px auto 0px auto;
 } */ */
-
-
-.usoAmpollitas{ /* ol ampollitas */
-    align-items: center center;
-}
 
 
 
@@ -449,7 +505,20 @@ gap: 5px;
     border-color: #D9C0FF; 
 }
 
+.btn-success:focus{
+    background-color: #B475FF;
+}
+
+/* .btn-success:{
+    background-color: aqua;
+} */
+
 .dropdown-item:hover{ /* hover navbar */
     background-color: #D9C0FF;
     color:darkorchid;
 }
+ 
+.modoDeUso{ /* ?? preg */
+    text-align: center;
+}
+
