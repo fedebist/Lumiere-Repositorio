@@ -1,0 +1,678 @@
+@charset "UTF-8";
+* {
+  font-family: 'Barlow Condensed', sans-serif !important;
+  /* list-style: none; */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* evitar hipervínculo */
+  font-family: 'Oswald', sans-serif;
+  list-style: none;
+  /*   background-color: beige; */
+  /*     background-color: #F2C8FC; */
+}
+
+html {
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+.header {
+  border-bottom: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
+  background-image: linear-gradient(to top, pink, #F2C8FC);
+  height: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  /*    animation-name: miAnimacion;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear; */
+}
+
+.headerMenu {
+  /* preguntar */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+}
+
+.logo {
+  /* logo lumiere */
+  font-family: 'Pacifico', cursive;
+  color: black;
+  font-size: 2.5rem;
+  width: 100px;
+  height: auto;
+}
+
+.headerMenu ul li {
+  padding: 10px;
+  display: inline-block;
+}
+
+.headerMenu ul li a:hover {
+  /* color al pasar click por encima */
+  color: deeppink;
+}
+
+/* .btn{
+position:relative;
+display: inline-block; 
+height: 60px;
+width: 90px;
+border-radius: 2px;
+text-transform: uppercase;
+color: black;
+font-size: 12px;
+overflow: hidden;
+border: 2px solid black;
+z-index: 0;
+font-weight: 15;
+background-color: ;
+} */
+#intro {
+  /* sección intro */
+  min-height: 500px;
+  padding: 20px;
+  text-align: center;
+  background-image: url("../Multimedia/Shampoo y acond BIOTINA.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#introTitle {
+  /* intro h1 Lumiere */
+  color: white;
+}
+
+#introTexto {
+  /* Lo mejor para tu cabello */
+  color: white;
+}
+
+.gridImg {
+  width: 600px;
+  margin: 0 auto;
+  /* LAS PONE MAS AL MEDIO */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.gridImg img {
+  width: 100%;
+  height: auto;
+}
+
+.footerRedes {
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  font-size: 95%;
+  background-color: pink;
+  height: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(pink), to(#F2C8FC));
+  background-image: linear-gradient(pink, #F2C8FC);
+}
+
+.footerIg {
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  font-size: 110%;
+}
+
+.logoIg {
+  display: inline-block;
+}
+
+.titulosCatalogo {
+  color: deeppink;
+  font-size: 160%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.titulosPanel {
+  color: black;
+  font-size: 110%;
+  text-align: center;
+  padding: 15px;
+}
+
+h4 {
+  /* títulos panel productos */
+  color: black;
+}
+
+.descripcionProducto {
+  padding-top: 7px;
+  text-align: center;
+  color: darkmagenta;
+  font-size: 120%;
+}
+
+.tituloContenedor {
+  /* titulo contenedor catálogo */
+  text-align: center;
+}
+
+.gridAreaPromo {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'article article section';
+  -ms-grid-rows: 150px;
+      grid-template-rows: 150px;
+  -ms-grid-columns: 150px;
+      grid-template-columns: 150px;
+}
+
+article {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: article;
+}
+
+section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: section;
+}
+
+.tituloCatalogo {
+  border-bottom: 1px solid pink;
+}
+
+.listado {
+  /* border-style: inset; */
+  border-bottom: 1px solid pink;
+}
+
+section.sectionBañoCrema {
+  background-color: #E6D3FD;
+  border-bottom: 6px solid #B475FF;
+}
+
+.containerBañoCrema {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100px;
+  padding: 2px 15px;
+  margin: auto;
+  /* LAS PONE MAS AL MEDIO */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  /* background-color: red; */
+  /* border: 10px solid pink;
+     */
+}
+
+.sectionPanelProductos {
+  background-color: #F2E7FF;
+  border-bottom: 6px solid #B475FF;
+}
+
+.sectionPanelProductos .containerPanelProductos {
+  padding: 2px 15px;
+  justify-items: center;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  gap: 1px;
+}
+
+.containerFotoPanel img {
+  width: 80px;
+}
+
+/* .containerFotoPanel:hover .img{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+} */
+.containerFotoPanel {
+  overflow: hidden;
+}
+
+.containerOroLiquido {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  padding: 2px 15px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+ */
+}
+
+.containerAmpollitas {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  padding: 2px 15px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.sectionOroLiquido {
+  background-color: #E6D3FD;
+  border-bottom: 6px solid #B475FF;
+}
+
+section.sectionAmpollitas {
+  background-color: #E6D3FD;
+  border-bottom: 6px solid #B475FF;
+}
+
+.sectionShampoo {
+  background-color: #E6D3FD;
+  border-bottom: 6px solid #B475FF;
+}
+
+.containerShampoo {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 200px;
+  padding: 2px 15px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.sectionCremaPeinar {
+  background-color: #E6D3FD;
+  border-bottom: 6px solid #B475FF;
+}
+
+.containerCremaPeinar {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  padding: 2px 15px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionRizos {
+  background-color: #E6D3FD;
+  border-bottom: 6px solid #B475FF;
+}
+
+.containerRizos {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  padding: 2px 15px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionTratamientosCapilares {
+  background-color: #E6D3FD;
+  border-bottom: 6px solid #B475FF;
+}
+
+.sectionCauterizador {
+  background-color: #E6D3FD;
+  border-bottom: 6px solid #B475FF;
+}
+
+.containerCauterizador {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  margin: auto;
+}
+
+.containerTratamientos {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100px;
+  padding: 2px 15px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+}
+
+.sectionAguaCoco {
+  background-color: #E6D3FD;
+  border-bottom: 6px solid #B475FF;
+}
+
+.sectionSerum {
+  background-color: #E6D3FD;
+}
+
+.containerAguaCoco {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  padding: 2px 15px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerSerum {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  padding: 2px 15px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerProducto {
+  margin: 15px;
+  padding: 2px 16px;
+  border-style: inset;
+  border-color: #F4F2F7;
+  /* border: 1px solid black; */
+  background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
+  background-image: linear-gradient(to top, pink, #F2C8FC);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.containerProducto img {
+  width: 240px;
+  height: auto;
+}
+
+.contenidoPagina {
+  /* background color del container */
+  background-color: #F2C8FC;
+}
+
+.nombreProducto {
+  /* nombre producto catálogo */
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+/* descripcionProducto{  /* descripción producto catálogo */
+/*  text-align: center;
+    padding: 5px auto 0px auto;
+} */
+/* video{
+    margin-left: auto;
+    margin-right: auto;
+    display:block; 
+} */
+.descripcionVideo {
+  color: deeppink;
+  font-size: 120%;
+  text-align: center;
+  padding: 20px;
+}
+
+@-webkit-keyframes miAnimacion {
+  0% {
+    background: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
+    background: linear-gradient(to top, pink, #F2C8FC);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E7AEDF), to(#EBA3E1));
+    background: linear-gradient(#E7AEDF, #EBA3E1);
+  }
+}
+
+@keyframes miAnimacion {
+  0% {
+    background: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
+    background: linear-gradient(to top, pink, #F2C8FC);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E7AEDF), to(#EBA3E1));
+    background: linear-gradient(#E7AEDF, #EBA3E1);
+  }
+}
+
+.animadoPromociones {
+  width: 100px;
+  heigt: 50px;
+  background: pink;
+  -webkit-animation-name: miAnimacion;
+          animation-name: miAnimacion;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.bg-pink {
+  background-color: #E7AEDF;
+}
+
+.bg-beige {
+  background-color: beige;
+}
+
+.bg-primary {
+  background-color: #E7AEDF;
+}
+
+/* color navbar */
+.bg-miColor {
+  background-color: #F2E7FF;
+}
+
+.carruselContainer {
+  height: 500px;
+}
+
+/* .navbar{
+    height: 100px;
+}
+ */
+.sectionCarrusel {
+  border-bottom: 15px solid #B475FF;
+}
+
+.navNavBar {
+  border-bottom: 15px solid #B475FF;
+}
+
+.navbar-brand {
+  color: blue;
+}
+
+.btn-success {
+  /* colores botones */
+  background-color: #F2E7FF;
+  color: black;
+  border-color: white;
+}
+
+.btn-success:hover {
+  /* hover botones */
+  background-color: #B475FF;
+  border-color: #D9C0FF;
+}
+
+.btn-success:focus {
+  background-color: #B475FF;
+}
+
+/* .btn-success:{
+    background-color: aqua;
+} */
+.dropdown-item:hover {
+  /* hover navbar */
+  background-color: #D9C0FF;
+  color: darkorchid;
+}
+
+.modoDeUso {
+  /* ?? preg */
+  text-align: center;
+}
+
+.text-decoration-none {
+  color: black;
+}
+
+.text-decoration-none:hover {
+  background-color: #D9C0FF;
+  color: darkorchid;
+}
+
+.contCarrusel {
+  background-color: #D9C0FF;
+}
+
+.containerIndex {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#D9C0FF), to(#B475FF));
+  background-image: linear-gradient(to top, #D9C0FF, #B475FF);
+  text-align: center;
+}
+
+.probandoTexto {
+  background-color: aqua;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#containerProducto {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen {
+  min-width: 300px;
+}
+
+and {
+  max-width: 450px;
+}
+
+.containerProducto {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: 6;
+      grid-template-rows: 6;
+}
+
+/* @media (min-width: 300px) and {max-width: 479px}
+.containerBañoCrema{
+    grid-template-columns: repeat(1, 1fr);
+
+} */
+/* 
+@media (min-width: 480px) and {max-width: 599px;}
+.containerBañoCrema{
+    grid-template-columns: repeat(2, 1fr);
+
+} */
+.btn-outline-success {
+  border: 2px solid #C298FF;
+  color: black;
+}
+
+.btn-outline-success:hover {
+  /* botón navbar */
+  background-color: #D9C0FF;
+  border: 2px solid #D9C0FF;
+}
+
+.nav-link {
+  /* tamaño fuente navbar */
+  font-size: 115%;
+}
+
+.navbar-brand {
+  font-size: 160%;
+}
+
+.textoIndex {
+  background-color: #F2C8FC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.textoIndex .parrafoTextoIndex {
+  padding: 2px 15px;
+  justify-items: center;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  font-size: 140%;
+}
+/*# sourceMappingURL=estilos.css.map */
