@@ -272,6 +272,11 @@ section.sectionBañoCrema {
   /* .btn-success:{
     background-color: aqua;
 } */
+  /* #containerProducto{display:grid;}
+@media screen {min-width: 300px;} and {max-width: 450px;}
+.containerProducto{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr) */
   /* @media (min-width: 300px) and {max-width: 479px}
 .containerBañoCrema{
     grid-template-columns: repeat(1, 1fr);
@@ -624,28 +629,6 @@ section.sectionBañoCrema {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.sectionPanelProductos #containerProducto {
-  display: -ms-grid;
-  display: grid;
-}
-
-@media screen {
-  .sectionPanelProductos {
-    min-width: 300px;
-  }
-}
-
-.sectionPanelProductos and {
-  max-width: 450px;
-}
-
-.sectionPanelProductos .containerProducto {
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  -ms-grid-rows: 6;
-      grid-template-rows: 6;
 }
 
 .sectionPanelProductos .btn-outline-success {
