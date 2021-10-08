@@ -400,14 +400,13 @@ gap: 5px;
     background-image:linear-gradient(to top, pink, #F2C8FC);
     align-self: center;
     justify-self: center;
+    img{
+        width: 240px;
+        height: auto;
+    }
 }  
 
 
-
-.containerProducto img{
-    width: 240px;
-    height: auto;
-}
 
 .contenidoPagina{ /* background color del container */
     background-color: #F2C8FC;
@@ -558,11 +557,10 @@ gap: 5px;
 
 
 #containerProducto{display:grid;}
-@media screen {min-width 300px;} and {max-width: 450px;}
+@media screen {min-width: 300px;} and {max-width: 450px;}
 .containerProducto{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 6;
-
 }
     
 
