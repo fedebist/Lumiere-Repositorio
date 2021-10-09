@@ -17,70 +17,6 @@ html {
   text-decoration: none;
 }
 
-.header {
-  border-bottom: 2px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
-  background-image: linear-gradient(to top, pink, #F2C8FC);
-  height: 80px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px;
-  /*    animation-name: miAnimacion;
-    animation-delay: 2s;
-    animation-duration: 3s;
-    animation-iteration-count:infinite;
-    animation-timing-function: linear; */
-}
-
-.headerMenu {
-  /* preguntar */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: black;
-}
-
-.logo {
-  /* logo lumiere */
-  font-family: 'Pacifico', cursive;
-  color: black;
-  font-size: 2.5rem;
-  width: 100px;
-  height: auto;
-}
-
-.headerMenu ul li {
-  padding: 10px;
-  display: inline-block;
-}
-
-.headerMenu ul li a:hover {
-  /* color al pasar click por encima */
-  color: deeppink;
-}
-
-/* .btn{
-position:relative;
-display: inline-block; 
-height: 60px;
-width: 90px;
-border-radius: 2px;
-text-transform: uppercase;
-color: black;
-font-size: 12px;
-overflow: hidden;
-border: 2px solid black;
-z-index: 0;
-font-weight: 15;
-background-color: ;
-} */
 #intro {
   /* sección intro */
   min-height: 500px;
@@ -101,12 +37,12 @@ background-color: ;
           justify-content: center;
 }
 
-#introTitle {
+#intro #introTitle {
   /* intro h1 Lumiere */
   color: white;
 }
 
-#introTexto {
+#intro #introTexto {
   /* Lo mejor para tu cabello */
   color: white;
 }
@@ -125,33 +61,6 @@ background-color: ;
 .gridImg img {
   width: 100%;
   height: auto;
-}
-
-.footerRedes {
-  font-family: 'Oswald', sans-serif;
-  color: black;
-  font-size: 95%;
-  background-color: pink;
-  height: 60px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(pink), to(#F2C8FC));
-  background-image: linear-gradient(pink, #F2C8FC);
-}
-
-.footerIg {
-  font-family: 'Oswald', sans-serif;
-  color: black;
-  font-size: 110%;
-}
-
-.logoIg {
-  display: inline-block;
 }
 
 .titulosCatalogo {
@@ -232,8 +141,8 @@ section.sectionBañoCrema {
   /* LAS PONE MAS AL MEDIO */
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 5px;
   /* background-color: red; */
   /* border: 10px solid pink;
@@ -241,8 +150,8 @@ section.sectionBañoCrema {
 }
 
 .sectionPanelProductos {
-  background-color: #F2E7FF;
-  border-bottom: 6px solid #B475FF;
+  background-color: #E6D3FD;
+  border-bottom: 3px solid #B475FF;
 }
 
 .sectionPanelProductos .containerPanelProductos {
@@ -584,7 +493,6 @@ section.sectionAmpollitas {
 }
 
 .modoDeUso {
-  /* ?? preg */
   text-align: center;
 }
 
@@ -592,7 +500,7 @@ section.sectionAmpollitas {
   color: black;
 }
 
-.text-decoration-none:hover {
+.text-decoration-none :hover {
   background-color: #D9C0FF;
   color: darkorchid;
 }
@@ -683,5 +591,30 @@ and {
       grid-template-columns: repeat(2, 1fr);
   gap: 70px;
   font-size: 140%;
+}
+
+.textoContenedor {
+  text-align: center;
+  font-size: 140%;
+}
+
+@media screen and (min-width: 40rem) {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 58rem) {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (min-width: 70rem) {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (min-width: 78rem) {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
 }
 /*# sourceMappingURL=estilos.css.map */
