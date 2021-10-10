@@ -515,14 +515,6 @@ section.sectionAmpollitas {
   text-align: center;
 }
 
-.probandoTexto {
-  background-color: aqua;
-  border: 2px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 #containerProducto {
   display: -ms-grid;
   display: grid;
@@ -596,6 +588,26 @@ and {
 .textoContenedor {
   text-align: center;
   font-size: 140%;
+}
+
+.tituloIndex {
+  color: deeppink;
+  font-size: 160%;
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
+  background-image: linear-gradient(to top, pink, #F2C8FC);
+}
+
+.card-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 @media screen and (min-width: 40rem) {

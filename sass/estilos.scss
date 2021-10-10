@@ -459,12 +459,6 @@ gap: 5px;
     text-align: center;
 }
 
-.probandoTexto{
-    background-color: aqua;
-    border: 2px solid black;
-    display: flex;
-}
-
 
 #containerProducto{display:grid;}
 @media screen {min-width: 300px;} and {max-width: 450px;}
@@ -526,6 +520,21 @@ gap: 5px;
     font-size: 140%;
 }
 
+.tituloIndex{
+    color: deeppink;
+    font-size: 160%;
+    text-align: center;
+    padding: 10px;
+}
+
+.card{
+   background-image:linear-gradient(to top, pink, #F2C8FC);
+}
+
+.card-text{
+    align-self: center;
+    justify-self: center;
+}
 
 @media screen and (min-width: 40rem){
     grid-template-columns: repeat(2, 1fr); 
