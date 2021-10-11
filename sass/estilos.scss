@@ -7,6 +7,7 @@
     text-decoration: none; /* evitar hipervínculo */
     font-family: 'Oswald', sans-serif;
     list-style: none;
+    cursor: default;
   /*   background-color: beige; */
 /*     background-color: #F2C8FC; */
     
@@ -25,6 +26,7 @@ html {
     padding: 20px; 
     text-align: center;
     background-image: url('../Multimedia/Shampoo\ y\ acond\ BIOTINA.jpeg');
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -32,9 +34,12 @@ html {
     justify-content: center;
     #introTitle{ /* intro h1 Lumiere */
         color: white;
+        font-size: 300%;
+        font-family: 'Merriweather', serif !important;
     }
     #introTexto{ /* Lo mejor para tu cabello */
         color: white;
+        font-size: 150%;
      }
      
 }
@@ -129,10 +134,10 @@ section.sectionBañoCrema{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(25rem), 1fr));
     gap: 5px;
-    /* background-color: red; */
-    /* border: 10px solid pink;
-     */
-    
+    :hover{
+        box-shadow: 5px 5px 20px rgba(1,0,0,2);
+        }
+  
 }
 
 .sectionPanelProductos{
@@ -304,11 +309,10 @@ gap: 5px;
 
 
 .containerProducto{
-     margin: 15px; 
-      padding: 2px 16px;
-     border-style: inset;
-     border-color: #F4F2F7;
-    /* border: 1px solid black; */
+     margin: 20px;
+   border-radius: 5px;
+   box-shadow: 0px 1px 10px rgba(0,0,0,0.9);
+   transition: all 400ms ease;
     background-image:linear-gradient(to top, pink, #F2C8FC);
     align-self: center;
     justify-self: center;
@@ -317,8 +321,6 @@ gap: 5px;
         height: auto;
     }
 }  
-
-
 
 .contenidoPagina{ /* background color del container */
     background-color: #F2C8FC;
@@ -408,9 +410,6 @@ gap: 5px;
     border-bottom: 15px solid #B475FF;
 }
 
-.navbar-brand{
-    color: blue;
-}
 
 .btn-success{ /* colores botones */
     background-color: #F2E7FF;
@@ -442,22 +441,12 @@ gap: 5px;
 
 .text-decoration-none{
     color: black;
-    :hover{
+/*     :hover{
         background-color: #D9C0FF;
         color:darkorchid;
-    }
+    } */
 }
 
-
-.contCarrusel{
-    background-color: #D9C0FF;
-}
-
-
-.containerIndex{
-    background-image:linear-gradient(to top, #D9C0FF, #B475FF);
-    text-align: center;
-}
 
 
 #containerProducto{display:grid;}
@@ -496,7 +485,8 @@ gap: 5px;
 }
 
 .navbar-brand{
-    font-size: 160%;
+    font-size: 230%;
+    font-family: 'Pacifico', cursive !important;
 }
 
 .textoIndex{
@@ -529,12 +519,58 @@ gap: 5px;
 
 .card{
    background-image:linear-gradient(to top, pink, #F2C8FC);
+   margin: 20px;
+   border-radius: 5px;
+   overflow: hidden;
+   box-shadow: 0px 1px 10px rgba(0,0,0,0.9);
+   transition: all 400ms ease;
+   .card a{
+    text-align: center;   
+    }
+}
+   
+.card:hover{
+     box-shadow: 5px 5px 20px rgba(1,0,0,2);
+     transform: translateY(-4%);
+   }
+
+   .contenedorIndex{
+       display: flex;
+       
+       
+   }
+
+ .card-text{
+       text-align: center;
+       display: inline-block;
 }
 
-.card-text{
-    align-self: center;
-    justify-self: center;
+.card-title{
+    text-align: center;
+
 }
+
+.btn-secondary{
+    background-color: #B475FF;
+}
+
+.containerIndex{
+    display: inline-block;
+}
+
+
+.col-lg-4{ /* Listado Index */
+    background-color: #F2E7FF;
+    border: inset;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+.col-lg-4:hover{
+    box-shadow: 10px 1px 10px rgba(0.5,0,0,0.4);
+    transform: translateX(-1%);
+}
+
 
 @media screen and (min-width: 40rem){
     grid-template-columns: repeat(2, 1fr); 

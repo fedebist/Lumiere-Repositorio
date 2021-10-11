@@ -8,6 +8,7 @@
   /* evitar hipervínculo */
   font-family: 'Oswald', sans-serif;
   list-style: none;
+  cursor: default;
   /*   background-color: beige; */
   /*     background-color: #F2C8FC; */
 }
@@ -23,6 +24,7 @@ html {
   padding: 20px;
   text-align: center;
   background-image: url("../Multimedia/Shampoo y acond BIOTINA.jpeg");
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -40,11 +42,14 @@ html {
 #intro #introTitle {
   /* intro h1 Lumiere */
   color: white;
+  font-size: 300%;
+  font-family: 'Merriweather', serif !important;
 }
 
 #intro #introTexto {
   /* Lo mejor para tu cabello */
   color: white;
+  font-size: 150%;
 }
 
 .gridImg {
@@ -144,9 +149,11 @@ section.sectionBañoCrema {
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 5px;
-  /* background-color: red; */
-  /* border: 10px solid pink;
-     */
+}
+
+.containerBañoCrema :hover {
+  -webkit-box-shadow: 5px 5px 20px #010000;
+          box-shadow: 5px 5px 20px #010000;
 }
 
 .sectionPanelProductos {
@@ -345,11 +352,12 @@ section.sectionAmpollitas {
 }
 
 .containerProducto {
-  margin: 15px;
-  padding: 2px 16px;
-  border-style: inset;
-  border-color: #F4F2F7;
-  /* border: 1px solid black; */
+  margin: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
   background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
   background-image: linear-gradient(to top, pink, #F2C8FC);
   -ms-flex-item-align: center;
@@ -462,10 +470,6 @@ section.sectionAmpollitas {
   border-bottom: 15px solid #B475FF;
 }
 
-.navbar-brand {
-  color: blue;
-}
-
 .btn-success {
   /* colores botones */
   background-color: #F2E7FF;
@@ -498,21 +502,10 @@ section.sectionAmpollitas {
 
 .text-decoration-none {
   color: black;
-}
-
-.text-decoration-none :hover {
-  background-color: #D9C0FF;
-  color: darkorchid;
-}
-
-.contCarrusel {
-  background-color: #D9C0FF;
-}
-
-.containerIndex {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#D9C0FF), to(#B475FF));
-  background-image: linear-gradient(to top, #D9C0FF, #B475FF);
-  text-align: center;
+  /*     :hover{
+        background-color: #D9C0FF;
+        color:darkorchid;
+    } */
 }
 
 #containerProducto {
@@ -563,7 +556,8 @@ and {
 }
 
 .navbar-brand {
-  font-size: 160%;
+  font-size: 230%;
+  font-family: 'Pacifico', cursive !important;
 }
 
 .textoIndex {
@@ -600,14 +594,63 @@ and {
 .card {
   background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
   background-image: linear-gradient(to top, pink, #F2C8FC);
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.card .card a {
+  text-align: center;
+}
+
+.card:hover {
+  -webkit-box-shadow: 5px 5px 20px #010000;
+          box-shadow: 5px 5px 20px #010000;
+  -webkit-transform: translateY(-4%);
+          transform: translateY(-4%);
+}
+
+.contenedorIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card-text {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  text-align: center;
+  display: inline-block;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.btn-secondary {
+  background-color: #B475FF;
+}
+
+.containerIndex {
+  display: inline-block;
+}
+
+.col-lg-4 {
+  /* Listado Index */
+  background-color: #F2E7FF;
+  border: inset;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.col-lg-4:hover {
+  -webkit-box-shadow: 10px 1px 10px rgba(1, 0, 0, 0.4);
+          box-shadow: 10px 1px 10px rgba(1, 0, 0, 0.4);
+  -webkit-transform: translateX(-1%);
+          transform: translateX(-1%);
 }
 
 @media screen and (min-width: 40rem) {
