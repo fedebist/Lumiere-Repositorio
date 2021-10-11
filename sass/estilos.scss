@@ -511,10 +511,12 @@ gap: 5px;
 }
 
 .tituloIndex{
-    color: deeppink;
+    color: black;
     font-size: 160%;
     text-align: center;
     padding: 10px;
+    background-color: pink;
+    margin: 20px;
 }
 
 .card{
@@ -571,13 +573,13 @@ gap: 5px;
     transform: translateX(-1%);
 }
  
-.titulosListado{
-    font-size: 120%;
+.titulosListado{ /* Listado título INDEX */
+    font-size: 125%;
     text-align: center;
 }
 
 .textoListado{ /* texto Listado Index */
-font-size: 120%;
+font-size: 115%;
 text-align: center;
 }
 

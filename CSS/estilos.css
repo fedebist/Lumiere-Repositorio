@@ -583,10 +583,12 @@ and {
 }
 
 .tituloIndex {
-  color: deeppink;
+  color: black;
   font-size: 160%;
   text-align: center;
   padding: 10px;
+  background-color: pink;
+  margin: 20px;
 }
 
 .card {
@@ -652,13 +654,14 @@ and {
 }
 
 .titulosListado {
-  font-size: 120%;
+  /* Listado título INDEX */
+  font-size: 125%;
   text-align: center;
 }
 
 .textoListado {
   /* texto Listado Index */
-  font-size: 120%;
+  font-size: 115%;
   text-align: center;
 }
 
