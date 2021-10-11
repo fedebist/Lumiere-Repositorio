@@ -149,11 +149,9 @@ section.sectionBañoCrema {
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 5px;
-}
-
-.containerBañoCrema :hover {
-  -webkit-box-shadow: 5px 5px 20px #010000;
-          box-shadow: 5px 5px 20px #010000;
+  /*   :hover{
+        box-shadow: 5px 5px 20px rgba(1,0,0,2);
+        } */
 }
 
 .sectionPanelProductos {
@@ -653,23 +651,28 @@ and {
           transform: translateX(-1%);
 }
 
-@media screen and (min-width: 40rem) {
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 540px) {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
 }
 
-@media screen and (min-width: 58rem) {
+@media screen and (max-width: 720px) {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
 
-@media screen and (min-width: 70rem) {
+@media screen and (max-width: 960) {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
 }
 
-@media screen and (min-width: 78rem) {
+@media screen and (max-width: 1140px) {
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
+}
+
+@media screen and (max-width: 1320px) {
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
 }
 /*# sourceMappingURL=estilos.css.map */
