@@ -653,11 +653,13 @@ and {
 
 .titulosListado {
   font-size: 120%;
+  text-align: center;
 }
 
 .textoListado {
   /* texto Listado Index */
   font-size: 120%;
+  text-align: center;
 }
 
 @media screen and (max-width: 540px) {
