@@ -20,7 +20,7 @@ html {
 
 #introIndex {
   /* sección intro */
-  min-height: 500px;
+  min-height: 550px;
   padding: 20px;
   text-align: center;
   background-image: url("../Multimedia/Shampoo y acond BIOTINA.jpeg");
@@ -53,7 +53,7 @@ html {
 }
 
 #introCatalogo {
-  min-height: 500px;
+  min-height: 550px;
   padding: 20px;
   text-align: center;
   background-image: url("../Multimedia/Baño de crema COCO.jpg");
