@@ -532,6 +532,7 @@ section.sectionAmpollitas {
 }
 
 .text-decoration-none {
+  /* color letras con <a> */
   color: black;
   /*     :hover{
         background-color: #D9C0FF;
@@ -655,7 +656,6 @@ and {
 
 .card-text {
   text-align: center;
-  display: inline-block;
 }
 
 .card-title {
