@@ -18,7 +18,7 @@ html {
   text-decoration: none;
 }
 
-#intro {
+#introIndex {
   /* sección intro */
   min-height: 500px;
   padding: 20px;
@@ -26,7 +26,7 @@ html {
   background-image: url("../Multimedia/Shampoo y acond BIOTINA.jpeg");
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,17 +39,50 @@ html {
           justify-content: center;
 }
 
-#intro #introTitle {
+#introIndex #introTitle {
   /* intro h1 Lumiere */
   color: white;
   font-size: 300%;
   font-family: 'Merriweather', serif !important;
 }
 
-#intro #introTexto {
+#introIndex #introTexto {
   /* Lo mejor para tu cabello */
   color: white;
   font-size: 150%;
+}
+
+#introCatalogo {
+  min-height: 500px;
+  padding: 20px;
+  text-align: center;
+  background-image: url("../Multimedia/Baño de crema COCO.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#introCatalogo #introTitle {
+  /* intro h1 Lumiere */
+  color: white;
+  font-size: 300%;
+  font-family: 'Merriweather', serif !important;
+}
+
+#introCatalogo #introTexto {
+  /* Lo mejor para tu cabello */
+  color: white;
+  font-size: 170%;
 }
 
 .gridImg {
