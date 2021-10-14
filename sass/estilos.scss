@@ -154,7 +154,7 @@ section.sectionBañoCrema{
     padding: 2px 15px;
     margin: auto; /* LAS PONE MAS AL MEDIO */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(25rem), 1fr));
+    grid-template-columns: repeat(6, 1fr);
     gap: 5px;
   /*   :hover{
         box-shadow: 5px 5px 20px rgba(1,0,0,2);
@@ -605,9 +605,24 @@ text-align: center;
 }
 
 
-@media screen and (max-width: 540px){
-    grid-template-columns: repeat(1, 1fr); 
+@media all and (max-width: 600px){
+    .containerBañoCrema{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
+
+@media all and (max-width: 600px){
+    .containerShampoo{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* @media all (min-width: 601px) and (max-width: 720px){
+    .containerBañoCrema{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
 
 @media screen and (max-width: 720px){
     grid-template-columns: repeat(3, 1fr); 

@@ -179,8 +179,8 @@ section.sectionBañoCrema {
   /* LAS PONE MAS AL MEDIO */
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   gap: 5px;
   /*   :hover{
         box-shadow: 5px 5px 20px rgba(1,0,0,2);
@@ -698,11 +698,25 @@ and {
   text-align: center;
 }
 
-@media screen and (max-width: 540px) {
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
+@media all and (max-width: 600px) {
+  .containerBañoCrema {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
+@media all and (max-width: 600px) {
+  .containerShampoo {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* @media all (min-width: 601px) and (max-width: 720px){
+    .containerBañoCrema{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
 @media screen and (max-width: 720px) {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
