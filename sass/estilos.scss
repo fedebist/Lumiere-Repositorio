@@ -66,6 +66,32 @@ html {
      }
 }
 
+#introFormulario{
+    min-height: 550px;
+    padding: 20px; 
+    text-align: center;
+    background-image: url('../Multimedia/Baño\ de\ crema\ aceite\ de\ ricino.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    #introTitle{ /* intro h1 Lumiere */
+        color: white;
+        font-size: 300%;
+        font-family: 'Merriweather', serif !important;
+    }
+    #introTexto{ /* Lo mejor para tu cabello */
+        color: white;
+        font-size: 170%;
+    }
+}
+
+.sectionFormulario{
+    background-color: beige;
+    text-align: center;
+}
 
 
 .gridImg{
@@ -593,6 +619,17 @@ gap: 5px;
 font-size: 115%;
 text-align: center;
 }
+
+.tituloFormulario{
+    font-size: 150%;
+    text-align: center;
+}
+
+.textoFormulario{
+    font-size: 110%;
+    text-align: center;
+}
+
 
 /* media queries baño crema  */
 

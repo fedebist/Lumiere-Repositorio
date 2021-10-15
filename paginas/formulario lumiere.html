@@ -22,8 +22,9 @@
     <link rel='stylesheet' href='../CSS/estilos.css'>
 </head>
 
-<body>
-    <nav class='navNavBar'>
+<body style='background-color: beige;'>
+    
+  <nav class='navNavBar'>
 
 
         <nav class="navbar navbar-expand-lg navbar-light bg-miColor b-b-0">
@@ -80,14 +81,24 @@
     
     
     
-    
-      </nav>
-      </header>
-    <br>
-   <fieldset>
-     <br>
+    </nav>
+ 
 
-    <legend>Formulario de contacto</legend>
+<section id='introFormulario'>
+
+  <h1 id='introTitle'>Lumière Capilares</h1>
+  <p id='introTexto'>Lo mejor para tu cabello</p>
+
+</section>
+
+  <div class="container">
+    <div class="row">
+     <div class='col-sm-12 col-lg-6'>
+
+ <fieldset>
+
+<section class='sectionFormulario'>
+<legend>Formulario de contacto</legend>
 
 <label for='nombre'>Nombre</label>
 <input type='text' id='nombre'>
@@ -104,11 +115,12 @@
 
 <br><br>
 
-<strong>Sexo:</strong><input type='radio' name='sexo' id='masculino'>Masculino <input type='radio' name='sexo' id='Femenino'>Femenino <input type='radio' name='sexo' id='No especifica'>No especifica
+<strong>Sexo: </strong><input type='radio' name='sexo' id='masculino'>Masculino <input type='radio' name='sexo' id='Femenino'>Femenino <input type='radio' name='sexo' id='No binario'>No binario
 
 <br><br>
 
-<input type='checkbox' name='acepta' id='acepta' required> Acepta los términos
+<label for='consulta'>Detallanos tu consulta</label>
+<textarea id='consulta' name='user_consulta'></textarea>
 
 <br><br>
 
@@ -125,7 +137,19 @@
 <input type='reset' value='Limpiar'>
 
  </fieldset>
+ </div>
+ 
+ <div class='col-sm-12 col-lg-6'>
+  <p class='tituloFormulario'><img src='../Multimedia/Pregunta formulario.png'> Envianos tu consulta</p>
+  <p class='textoFormulario'>¿Buscás asesoramiento sobre cuál es el producto que más se adapta a las necesidades de tu cabello? ¿Sos cliente y tenés alguna duda? ¡No dudes en escribirnos!</p>
+</div>
 
+
+</div>
+</div>
+</div>
+ 
+</section>
 
 
  <footer class='bg-miColor'>
@@ -133,7 +157,7 @@
       <div class='row text-center'>
         <div class='col-12 col-md-6 my-2'>
           <p>contacto</p>
-          <a href= 'https://instagram.com/lumiere.capilares?utm_medium=copy_link' target='blank'><p class='logoIg'><img src='../Multimedia/instagram.png' width='40' height='45'></p>
+          <a href= 'https://instagram.com/lumiere.capilares?utm_medium=copy_link' target='blank' class='text-decoration-none'><p class='logoIg'><img src='../Multimedia/instagram.png' width='40' height='45'></p>
           <h4 class=footerIg>instagram lumiere.capilares</h4></a>
         </div>
         <div class='col-12 col-md-6 my-2'>
@@ -143,43 +167,9 @@
      </div>
        </div>
         </footer>
-    
 
 
-
-
-
-
-
-
-
-
-
-
- </fieldset>       
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- scripts js -->
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
  integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
  crossorigin="anonymous"></script>

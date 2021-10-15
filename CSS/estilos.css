@@ -85,6 +85,44 @@ html {
   font-size: 170%;
 }
 
+#introFormulario {
+  min-height: 550px;
+  padding: 20px;
+  text-align: center;
+  background-image: url("../Multimedia/Baño de crema aceite de ricino.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#introFormulario #introTitle {
+  /* intro h1 Lumiere */
+  color: white;
+  font-size: 300%;
+  font-family: 'Merriweather', serif !important;
+}
+
+#introFormulario #introTexto {
+  /* Lo mejor para tu cabello */
+  color: white;
+  font-size: 170%;
+}
+
+.sectionFormulario {
+  background-color: beige;
+  text-align: center;
+}
+
 .gridImg {
   width: 600px;
   margin: 0 auto;
@@ -675,6 +713,16 @@ section.sectionAmpollitas {
 .textoListado {
   /* texto Listado Index */
   font-size: 115%;
+  text-align: center;
+}
+
+.tituloFormulario {
+  font-size: 150%;
+  text-align: center;
+}
+
+.textoFormulario {
+  font-size: 110%;
   text-align: center;
 }
 
