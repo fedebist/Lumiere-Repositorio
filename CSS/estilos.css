@@ -344,8 +344,8 @@ section.sectionAmpollitas {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   gap: 5px;
 }
 
@@ -540,26 +540,6 @@ section.sectionAmpollitas {
     } */
 }
 
-#containerProducto {
-  display: -ms-grid;
-  display: grid;
-}
-
-@media screen {
-  min-width: 300px;
-}
-
-and {
-  max-width: 450px;
-}
-
-.containerProducto {
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  -ms-grid-rows: 6;
-      grid-template-rows: 6;
-}
-
 /* @media (min-width: 300px) and {max-width: 479px}
 .containerBañoCrema{
     grid-template-columns: repeat(1, 1fr);
@@ -698,42 +678,75 @@ and {
   text-align: center;
 }
 
-@media all and (max-width: 600px) {
+/* media queries baño crema  */
+@media only screen and (max-width: 600px) {
   .containerBañoCrema {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media all and (max-width: 600px) {
+@media (min-width: 601px) and (max-width: 900px) {
+  .containerBañoCrema {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .containerBañoCrema {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .containerBañoCrema {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1700px) {
+  .containerBañoCrema {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1701px) {
+  .containerBañoCrema {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* media queries shampoo y acondicionador */
+@media only screen and (max-width: 600px) {
   .containerShampoo {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
-/* @media all (min-width: 601px) and (max-width: 720px){
-    .containerBañoCrema{
+@media (min-width: 601px) and (max-width: 900px) {
+  .containerShampoo {
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    }
-} */
-@media screen and (max-width: 720px) {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-@media screen and (max-width: 960) {
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+@media (min-width: 901px) and (max-width: 1200px) {
+  .containerShampoo {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-@media screen and (max-width: 1140px) {
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-}
-
-@media screen and (max-width: 1320px) {
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .containerShampoo {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

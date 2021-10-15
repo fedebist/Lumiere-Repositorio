@@ -298,7 +298,7 @@ gap: 5px;
     padding: 2px 15px;
     margin: auto; 
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
 
@@ -470,16 +470,6 @@ gap: 5px;
 }
 
 
-
-#containerProducto{display:grid;}
-@media screen {min-width: 300px;} and {max-width: 450px;}
-.containerProducto{
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 6;
-}
-    
-
-
 /* @media (min-width: 300px) and {max-width: 479px}
 .containerBañoCrema{
     grid-template-columns: repeat(1, 1fr);
@@ -604,38 +594,66 @@ font-size: 115%;
 text-align: center;
 }
 
+/* media queries baño crema  */
 
-@media all and (max-width: 600px){
+@media only screen and (max-width: 600px){
     .containerBañoCrema{
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media all and (max-width: 600px){
+@media (min-width: 601px) and (max-width: 900px){
+    .containerBañoCrema{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px){
+    .containerBañoCrema{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px){
+    .containerBañoCrema{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1501px) and (max-width: 1700px){
+    .containerBañoCrema{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width: 1701px){
+    .containerBañoCrema{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* media queries shampoo y acondicionador */
+
+@media only screen and (max-width: 600px){
     .containerShampoo{
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-/* @media all (min-width: 601px) and (max-width: 720px){
-    .containerBañoCrema{
+@media (min-width: 601px) and (max-width: 900px){
+    .containerShampoo{
         grid-template-columns: repeat(2, 1fr);
     }
-} */
-
-
-@media screen and (max-width: 720px){
-    grid-template-columns: repeat(3, 1fr); 
 }
 
-@media screen and (max-width: 960){
-    grid-template-columns: repeat(4, 1fr); 
+@media (min-width: 901px) and (max-width: 1200px){
+    .containerShampoo{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-@media screen and (max-width: 1140px){
-    grid-template-columns: repeat(5, 1fr); 
-}
-
-@media screen and (max-width: 1320px){
-    grid-template-columns: repeat(6, 1fr); 
+@media (min-width: 1201px) and (max-width: 1500px){
+    .containerShampoo{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
