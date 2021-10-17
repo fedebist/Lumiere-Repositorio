@@ -226,7 +226,7 @@ section.sectionBañoCrema {
 }
 
 .sectionPanelProductos {
-  background-color: #E6D3FD;
+  background-color: beige;
   border-bottom: 3px solid #B475FF;
 }
 
@@ -242,7 +242,19 @@ section.sectionBañoCrema {
 }
 
 .sectionPanelProductos .containerFotoPanel {
-  overflow: hidden;
+  margin: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
+  background-image: linear-gradient(to top, pink, #F2C8FC);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .sectionPanelProductos .containerFotoPanel img {
@@ -576,6 +588,10 @@ section.sectionAmpollitas {
         background-color: #D9C0FF;
         color:darkorchid;
     } */
+}
+
+.text-decoration-none :hover {
+  color: black;
 }
 
 /* @media (min-width: 300px) and {max-width: 479px}
