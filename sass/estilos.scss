@@ -488,9 +488,13 @@ gap: 5px;
     background-color: aqua;
 } */
 
+.dropdown-item{
+    color:black;
+}
+
 .dropdown-item:hover{ /* hover navbar */
-    background-color: #D9C0FF;
-    color:darkorchid;
+    background-color: beige;
+    color: rgb(188, 94, 235);
 }
  
 .text-decoration-none{ /* color letras con <a> */
@@ -659,11 +663,11 @@ text-align: center;
 
 .dropdown-menu{
     background-image: linear-gradient(to top, pink, #F2C8FC);
-    color: black;
+    color: white;
 }
 
-.dropdown-item{
-    color:black;
+.dropdown-menu:hover{
+background-color: black;
 }
 
 /* media queries baño crema  */

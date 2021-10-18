@@ -576,10 +576,14 @@ section.sectionAmpollitas {
 /* .btn-success:{
     background-color: aqua;
 } */
+.dropdown-item {
+  color: black;
+}
+
 .dropdown-item:hover {
   /* hover navbar */
-  background-color: #D9C0FF;
-  color: darkorchid;
+  background-color: beige;
+  color: #bc5eeb;
 }
 
 .text-decoration-none {
@@ -765,11 +769,11 @@ section.sectionAmpollitas {
 .dropdown-menu {
   background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
   background-image: linear-gradient(to top, pink, #F2C8FC);
-  color: black;
+  color: white;
 }
 
-.dropdown-item {
-  color: black;
+.dropdown-menu:hover {
+  background-color: black;
 }
 
 /* media queries baño crema  */
