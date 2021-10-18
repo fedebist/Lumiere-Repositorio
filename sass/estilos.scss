@@ -464,6 +464,10 @@ gap: 5px;
     border-bottom: 15px solid #B475FF;
 }
 
+.btn{
+    color: white;
+    border: #B475FF;
+}
 
 .btn-success{ /* colores botones */
     background-color: #F2E7FF;
@@ -489,10 +493,6 @@ gap: 5px;
     color:darkorchid;
 }
  
-.modoDeUso{ 
-    text-align: center;
-}
-
 .text-decoration-none{ /* color letras con <a> */
     color: black;
     :hover{
@@ -599,7 +599,14 @@ gap: 5px;
 }
 
 .btn-secondary{
+    background-color: #F2E7FF;
+    color: black;
+    border-color: white;
+}
+
+.btn-secondary:hover{ /* hover botones */
     background-color: #B475FF;
+    border-color: #D9C0FF; 
 }
 
 .containerIndex{
@@ -639,6 +646,25 @@ text-align: center;
     text-align: center;
 }
 
+.modoUso{
+    text-align: center;
+}
+
+.usoBaño{
+    text-align: center;
+    font-size: 100%;
+    color: black;
+    font-family: 'Noto Sans Display', sans-serif !important;
+}
+
+.dropdown-menu{
+    background-image: linear-gradient(to top, pink, #F2C8FC);
+    color: black;
+}
+
+.dropdown-item{
+    color:black;
+}
 
 /* media queries baño crema  */
 
