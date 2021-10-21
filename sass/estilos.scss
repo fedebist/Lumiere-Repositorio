@@ -22,7 +22,7 @@ html {
 
 
 #introIndex{ /* sección intro */
-    min-height: 550px;
+    min-height: 600px;
     padding: 20px; 
     text-align: center;
     background-image: url('../Multimedia/Shampoo\ y\ acond\ BIOTINA.jpeg');
@@ -44,8 +44,30 @@ html {
      
 }
 
+#introNosotros{
+    min-height: 600px;
+    padding: 20px; 
+    text-align: center;
+    background-image: url('../Multimedia/Baño\ de\ crema\ argán.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    #introTitle{ /* intro h1 Lumiere */
+        color: white;
+        font-size: 300%;
+        font-family: 'Merriweather', serif !important;
+    }
+    #introTexto{ /* Lo mejor para tu cabello */
+        color: white;
+        font-size: 170%;
+     }
+}
+
 #introCatalogo{
-    min-height: 550px;
+    min-height: 600px;
     padding: 20px; 
     text-align: center;
     background-image: url('../Multimedia/Baño\ de\ crema\ COCO.jpg');
@@ -67,7 +89,7 @@ html {
 }
 
 #introFormulario{
-    min-height: 550px;
+    min-height: 600px;
     padding: 20px; 
     text-align: center;
     background-image: url('../Multimedia/Baño\ de\ crema\ aceite\ de\ ricino.jpeg');
@@ -668,6 +690,19 @@ text-align: center;
 
 .dropdown-menu:hover{
 background-color: black;
+}
+
+.sectionNosotros{
+    background-color: #E6D3FD;
+}
+
+.contenedorNosotros{
+    background-color: #B475FF;
+}
+
+video{
+    width: 350px;
+ 
 }
 
 /* media queries baño crema  */
