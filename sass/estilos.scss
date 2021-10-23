@@ -739,7 +739,7 @@ background-color: black;
     font-size: 130%;
 }
 
-.packPromocion{
+.packPromocion{ /* promociones de 3 productos doc promociones */
     text-align: center;
     font-size: 120%;
     background-image:linear-gradient(to top, pink, #F2C8FC);
@@ -754,6 +754,17 @@ background-color: black;
     box-shadow: 5px 5px 20px rgba(1,0,0,2);
     transform: translateY(-4%);
   }
+
+.tablaProductos{
+    background-color: #E6D3FD
+}
+
+#tabla{
+    color: darkorchid;
+    font-size: 160%;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
 
     /* media queries baño crema  */
 

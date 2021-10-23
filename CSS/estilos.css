@@ -883,6 +883,7 @@ section.sectionAmpollitas {
 }
 
 .packPromocion {
+  /* promociones de 3 productos doc promociones */
   text-align: center;
   font-size: 120%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
@@ -901,6 +902,17 @@ section.sectionAmpollitas {
           box-shadow: 5px 5px 20px #010000;
   -webkit-transform: translateY(-4%);
           transform: translateY(-4%);
+}
+
+.tablaProductos {
+  background-color: #E6D3FD;
+}
+
+#tabla {
+  color: darkorchid;
+  font-size: 160%;
+  text-align: center;
+  padding: 10px 0 0 0;
 }
 
 /* media queries baño crema  */
