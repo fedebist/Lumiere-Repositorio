@@ -874,17 +874,17 @@ section.sectionAmpollitas {
 
 .titulosPromociones {
   text-align: center;
-  font-size: 185%;
+  font-size: 140%;
 }
 
 .descripcionPromociones {
   text-align: center;
-  font-size: 150%;
+  font-size: 130%;
 }
 
 .packPromocion {
   text-align: center;
-  font-size: 135%;
+  font-size: 120%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
   background-image: linear-gradient(to top, pink, #F2C8FC);
   margin: 20px;
