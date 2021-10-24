@@ -604,7 +604,7 @@ section.sectionAmpollitas {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .btn {
@@ -634,6 +634,7 @@ section.sectionAmpollitas {
 } */
 .dropdown-item {
   color: black;
+  z-index: 1;
 }
 
 .dropdown-item:hover {
@@ -933,6 +934,19 @@ section.sectionAmpollitas {
 
 .table-light {
   color: #5a0ad1;
+}
+
+.precios {
+  font-size: 120%;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
+  background-image: linear-gradient(to top, pink, #F2C8FC);
+  margin: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 /* media queries baño crema  */
