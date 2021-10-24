@@ -484,6 +484,10 @@ gap: 5px;
 
 .navNavBar{
     border-bottom: 15px solid #B475FF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .btn{
@@ -562,6 +566,7 @@ gap: 5px;
     font-size: 230%;
     font-family: 'Pacifico', cursive !important;
 }
+
 
 .textoIndex{
     background-color: #F2C8FC;
@@ -846,15 +851,9 @@ color: #5a0ad1;
     }
 }
 
-/* border top divisorio en versión de celular promociones */
+/* border top divisorio en versión small promociones */
 @media only screen and (max-width: 767px){
     .titulosMayorista{
         border-top: 6px solid #B475FF;
-    }
-}
-
-@media only screen and (max-width: 767px){
-    background-image{
-        max-width:200px,
     }
 }
