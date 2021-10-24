@@ -937,10 +937,10 @@ section.sectionAmpollitas {
 }
 
 .precios {
-  font-size: 120%;
+  font-size: 115%;
   text-align: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
-  background-image: linear-gradient(to top, pink, #F2C8FC);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0bc2fa), to(#F2C8FC));
+  background-image: linear-gradient(to top, #0bc2fa, #F2C8FC);
   margin: 20px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
