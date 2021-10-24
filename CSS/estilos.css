@@ -493,11 +493,8 @@ section.sectionAmpollitas {
   transition: all 400ms ease;
   background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
   background-image: linear-gradient(to top, pink, #F2C8FC);
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  /*   align-self: center;
+    justify-self: center; */
 }
 
 .containerProducto img {
@@ -937,7 +934,7 @@ section.sectionAmpollitas {
 }
 
 .precios {
-  font-size: 115%;
+  font-size: 110%;
   text-align: center;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#0bc2fa), to(#F2C8FC));
   background-image: linear-gradient(to top, #0bc2fa, #F2C8FC);

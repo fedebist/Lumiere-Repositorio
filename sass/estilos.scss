@@ -390,8 +390,8 @@ gap: 5px;
    box-shadow: 0px 1px 10px rgba(0,0,0,0.9);
    transition: all 400ms ease;
     background-image:linear-gradient(to top, pink, #F2C8FC);
-    align-self: center;
-    justify-self: center;
+  /*   align-self: center;
+    justify-self: center; */
     img{
         width: 240px;
         height: auto;
@@ -789,7 +789,7 @@ color: #5a0ad1;
 }
 
 .precios{
-    font-size: 115%;
+    font-size: 110%;
     text-align: center;
     background-image:linear-gradient(to top, rgb(11, 194, 250), #F2C8FC);
     margin: 20px;
