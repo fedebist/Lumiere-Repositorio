@@ -457,6 +457,7 @@ section.sectionAmpollitas {
 
 .sectionSerum {
   background-color: #E6D3FD;
+  border-bottom: 6px solid #B475FF;
 }
 
 .containerAguaCoco {
@@ -817,6 +818,12 @@ section.sectionAmpollitas {
   font-family: 'Noto Sans Display', sans-serif !important;
 }
 
+.usoBañoTitulo {
+  text-align: center;
+  font-size: 135%;
+  color: #f83df8;
+}
+
 .dropdown-menu {
   background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
   background-image: linear-gradient(to top, pink, #F2C8FC);
@@ -873,6 +880,11 @@ section.sectionAmpollitas {
 }
 
 .titulosPromociones {
+  text-align: center;
+  font-size: 140%;
+}
+
+.titulosMayorista {
   text-align: center;
   font-size: 140%;
 }
@@ -988,6 +1000,19 @@ section.sectionAmpollitas {
   .containerShampoo {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* border top divisorio en versión de celular promociones */
+@media only screen and (max-width: 767px) {
+  .titulosMayorista {
+    border-top: 6px solid #B475FF;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  background-image {
+    max-width: 200px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
