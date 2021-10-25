@@ -225,7 +225,7 @@ h4 {
 }
 
 .descripcionProducto {
-  padding-top: 7px;
+  padding: 12px;
   text-align: center;
   color: darkmagenta;
   font-size: 120%;
@@ -313,11 +313,8 @@ section.sectionBañoCrema {
   transition: all 400ms ease;
   background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
   background-image: linear-gradient(to top, pink, #F2C8FC);
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  /*    align-self: center;
+         justify-self: center; */
 }
 
 .sectionPanelProductos .containerFotoPanel img {
@@ -493,7 +490,7 @@ section.sectionAmpollitas {
   transition: all 400ms ease;
   background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
   background-image: linear-gradient(to top, pink, #F2C8FC);
-  /*   align-self: center;
+  /*    align-self: center;
     justify-self: center; */
 }
 
@@ -643,13 +640,9 @@ section.sectionAmpollitas {
 .text-decoration-none {
   /* color letras con <a> */
   color: black;
-  /*     :hover{
-        background-color: #D9C0FF;
-        color:darkorchid;
-    } */
 }
 
-.text-decoration-none :hover {
+.text-decoration-none:hover {
   color: black;
 }
 
@@ -824,6 +817,7 @@ section.sectionAmpollitas {
   text-align: center;
   font-size: 135%;
   color: #f83df8;
+  border-top: 2px solid #B475FF;
 }
 
 .dropdown-menu {
