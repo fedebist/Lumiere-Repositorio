@@ -19,8 +19,6 @@ html {
 }
 
 
-
-
 #introIndex{ /* sección intro */
     min-height: 600px;
     padding: 20px; 
@@ -793,6 +791,33 @@ color: #5a0ad1;
     transition: all 400ms ease;
 }
 
+#name, #email, #consulta,{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#enviar, #limpiar{
+    background-color: rgb(225, 196, 240);
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+#enviar:hover{
+    background-color: rgb(245, 245, 216);
+}
+
+#limpiar:hover{
+    background-color: rgb(245, 245, 216);
+}
+
+
+
     /* media queries baño crema  */
 
 @media only screen and (max-width: 600px){
@@ -857,9 +882,24 @@ color: #5a0ad1;
     }
 }
 
+/* responsive tratamientos capilares */
+
+@media only screen and (max-width: 600px){
+    .containerTratamientos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 /* border top divisorio en versión small promociones */
 @media only screen and (max-width: 767px){
     .titulosMayorista{
         border-top: 6px solid #B475FF;
+    }
+}
+
+/* padding formulario en versiones small y medium */
+@media only screen and (max-width: 990px){
+    .tituloFormulario{
+       padding-top: 30px;
     }
 }

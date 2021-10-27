@@ -100,45 +100,18 @@
 
 <section class='sectionFormulario'>
 <legend>Formulario de contacto</legend>
+<form class='formulario' action='enviar.php' method='post'>
+<input type ='text' name='name' id='name' placeholder="Nombre">
+<input type='mail' name='mail' id='email' placeholder='email' required>
 
-<label for='nombre'>Nombre</label>
-<input type='text' id='nombre'>
+<textarea id='consulta' name='consulta' placeholder ='Detallanos tu consulta' required></textarea>
 
-<br><br>
-
-<label for='apellido'>Apellido</label>
-<input type='text' id='apellido'>
-
-<br><br>
-
-<label for='email'>Email</label>
-<input type='email' id='email' required>
-
-<br><br>
-
-<strong>Sexo: </strong><input type='radio' name='sexo' id='masculino'>Masculino <input type='radio' name='sexo' id='Femenino'>Femenino <input type='radio' name='sexo' id='No binario'>No binario
-
-<br><br>
-
-<label for='consulta'>Detallanos tu consulta</label>
-<textarea id='consulta' name='user_consulta'></textarea>
-
-<br><br>
-
-<label for='compra'>Compra</label>
-<select name='id'>
-    <option value='min'>Minorista</option>
-    <option value='may'>Mayorista</option>
-    </select>
-
-
-<br><br>
-
-<input type='submit' value='Enviar ahora'>
-<input type='reset' value='Limpiar'>
+<input type='submit' id='enviar' value='Enviar ahora'>
+<input type='reset' id='limpiar' value='Limpiar'>
 
  </fieldset>
  </div>
+</form>
  
  <div class='col-sm-12 col-lg-6'>
   <p class='tituloFormulario'><img src='../Multimedia/Pregunta formulario.png' alt='Formulario'> Envianos tu consulta</p>
