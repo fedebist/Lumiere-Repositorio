@@ -816,8 +816,6 @@ textarea{
     background-color: rgb(245, 245, 216);
 }
 
-
-
     /* media queries baño crema  */
 
 @media only screen and (max-width: 600px){
@@ -901,5 +899,37 @@ textarea{
 @media only screen and (max-width: 990px){
     .tituloFormulario{
        padding-top: 30px;
+    }
+}
+
+/* mq forms google contacto */
+
+@media only screen and (max-width: 600px){
+    iframe{
+        width: 450px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 750px){
+    iframe{
+        width: 480px;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 950px){
+    iframe{
+        width: 550px;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1000px){
+    iframe{
+        width: 720px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1300px){
+    iframe{
+        width: 1000px;
     }
 }
