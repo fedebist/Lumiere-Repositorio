@@ -1062,7 +1062,7 @@ textarea {
 /* mq forms google contacto */
 @media only screen and (max-width: 600px) {
   iframe {
-    width: 350px;
+    width: 320px;
   }
 }
 
