@@ -229,6 +229,7 @@ h4 {
   text-align: center;
   color: darkmagenta;
   font-size: 120%;
+  font-family: 'Barlow Condensed', sans-serif !important;
 }
 
 .tituloContenedor {
