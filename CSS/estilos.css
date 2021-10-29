@@ -42,8 +42,8 @@ html {
 #introIndex #introTitle {
   /* intro h1 Lumiere */
   color: white;
-  font-size: 300%;
-  font-family: 'Merriweather', serif !important;
+  font-size: 340%;
+  font-family: 'Parisienne', cursive !important;
 }
 
 #introIndex #introTexto {
@@ -76,7 +76,7 @@ html {
   /* intro h1 Lumiere */
   color: white;
   font-size: 300%;
-  font-family: 'Merriweather', serif !important;
+  font-family: 'Parisienne', cursive !important;
 }
 
 #introPromociones #introTexto {
@@ -109,7 +109,7 @@ html {
   /* intro h1 Lumiere */
   color: white;
   font-size: 300%;
-  font-family: 'Merriweather', serif !important;
+  font-family: 'Parisienne', cursive !important;
 }
 
 #introNosotros #introTexto {
@@ -142,7 +142,7 @@ html {
   /* intro h1 Lumiere */
   color: white;
   font-size: 300%;
-  font-family: 'Merriweather', serif !important;
+  font-family: 'Parisienne', cursive !important;
 }
 
 #introCatalogo #introTexto {
@@ -175,7 +175,7 @@ html {
   /* intro h1 Lumiere */
   color: white;
   font-size: 300%;
-  font-family: 'Merriweather', serif !important;
+  font-family: 'Parisienne', cursive !important;
 }
 
 #introFormulario #introTexto {
@@ -490,8 +490,11 @@ section.sectionAmpollitas {
   transition: all 400ms ease;
   background-image: -webkit-gradient(linear, left bottom, left top, from(pink), to(#F2C8FC));
   background-image: linear-gradient(to top, pink, #F2C8FC);
-  /*    align-self: center;
-    justify-self: center; */
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .containerProducto img {
@@ -546,22 +549,6 @@ section.sectionAmpollitas {
     background: -webkit-gradient(linear, left top, left bottom, from(#E7AEDF), to(#EBA3E1));
     background: linear-gradient(#E7AEDF, #EBA3E1);
   }
-}
-
-.animadoPromociones {
-  width: 100px;
-  height: 50px;
-  background: pink;
-  -webkit-animation-name: miAnimacion;
-          animation-name: miAnimacion;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
 }
 
 .bg-pink {
@@ -883,11 +870,11 @@ section.sectionAmpollitas {
 .titulosMayorista {
   text-align: center;
   font-size: 140%;
-}
-
-.descripcionPromociones {
-  text-align: center;
-  font-size: 130%;
+  margin-bottom: 5px;
+  border: dotted 5px #5f5f5f;
+  background-color: #dc91f3;
+  color: beige;
+  font-family: 'Parisienne', cursive !important;
 }
 
 .packPromocion {
@@ -901,6 +888,19 @@ section.sectionAmpollitas {
   overflow: hidden;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.descripcionPromociones {
+  text-align: center;
+  font-size: 120%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#c6f1bc), to(#ebc2f5));
+  background-image: linear-gradient(to top, #c6f1bc, #ebc2f5);
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  /* box-shadow: 0px 1px 10px rgba(0,0,0,0.9); */
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
@@ -963,6 +963,16 @@ textarea {
 
 #limpiar:hover {
   background-color: #f5f5d8;
+}
+
+/* botones Mercado Pago */
+.mp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* media queries baño crema  */
@@ -1060,15 +1070,21 @@ textarea {
 }
 
 /* mq forms google contacto */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   iframe {
     width: 320px;
   }
 }
 
-@media (min-width: 601px) and (max-width: 750px) {
+@media (min-width: 401px) and (max-width: 600px) {
   iframe {
     width: 480px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 750px) {
+  iframe {
+    width: 500px;
   }
 }
 
