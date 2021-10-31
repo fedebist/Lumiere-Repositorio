@@ -818,11 +818,20 @@ textarea{
     background-color: rgb(245, 245, 216);
 }
 
-
 /* botones Mercado Pago */
 .mp{
   display: flex;
   justify-content: center;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+    background: #F2E7FF;
+}
+
+::-webkit-scrollbar-thumb{
+    background-image:linear-gradient(to top, pink, #F2C8FC);
+    border-radius: 50px;
 }
 
     /* media queries baño crema  */
